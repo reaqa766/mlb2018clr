@@ -199,4 +199,127 @@ ul li ul li a {
   }
 
 
+} */
+.header-6 {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.branding {
+  min-width: 4.5rem;
+}
+.bt-menu {
+  display: none;
+}
+
+span.title {
+  font-size:1.5rem;
+  font-weight: bold;
+}
+.header-nav {
+width: 65%;
+}
+.header-actions {
+  flex: 0 0 0;
+   text-align: center;
+  justify-content: center;
+  width:10rem !important;
+
+}
+
+button.nav-text {
+  font-size: .80rem;
+  padding: 0;
+}
+.dropdown {
+  /* width: 10em; */
+  padding: 0;
+}
+.nav-text {
+  font-size: .80rem;
+  /* width: 10em; */
+}
+.nav-link {
+  width: 13em;
+  text-align: center;
+}
+.branding .nav-link {
+  width: 6em;
+  text-align: center;
+}
+.dropdown-menu {
+
+  background-color: rgba(255, 255, 255, 0.95);
+}
+.dropdown-item{
+font-weight: bold;
+}
+/*Style 'show menu' label button and hide it by default*/
+.show-menu {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-decoration: none;
+  color: #fff;
+  background: #19c589;
+  text-align: center;
+  padding: 10px 0;
+  display: none;
+}
+/*Hide checkbox*/
+input[type=checkbox]{
+  display: none;
+}
+/*Show menu when invisible checkbox is checked*/
+input[type=checkbox]:checked ~ #menu {
+  display: block;
+}
+
+@media screen and (max-width:767px) {
+  .header-6 {
+    white-space: normal;
+    display: none;
+  }
+  
+  .bt-menu {
+    display: flex;
+    text-align: end;
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255);
+    text-decoration: none;    
+  }
+  .icon-list2 {
+    width: 65vw;
+    padding-bottom: 4vh;
+  }
+  .header-nav {
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 60vh;
+    background-color: rgba(71, 69, 69, 0.9);
+    text-align: left;
+   
+  }
+  .nav-link {
+    display: block;
+    width: 40em;
+    text-align: left;
+    cursor: pointer;
+  }
+  .dropdown {
+    text-align: left; 
+    width: 12em; 
+  }
+  .dropdown-toggle.nav-text {
+    padding: 0 !important;
+
+  }
+  .header-actions {
+    justify-content: flex-start;
+    padding: 0 1rem;
+  }
+
+  .btn1 {
+    text-align: left; 
+    width: 9em; 
+  }
+}
 }
