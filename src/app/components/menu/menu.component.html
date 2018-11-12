@@ -1,38 +1,42 @@
 <header>
+  <ng-container *ngIf="show_menu">
   <div class="menu_bar">
-      <ul class="menu_responsive">
-          <li class="branding">VtGl</li>
-          <li><a href="#" class="bt-menu"><span class="icon-list2"></span>Menu</a></li>
-          <!-- <li><clr-icon class="bt-menu bt-menu-Hamb" shape="bars"></clr-icon></li> -->
-      </ul>
+    <ul class="menu_responsive">
+      <li class="branding menu_ppalA">VtGl</li>
+      <li  class="menu_bar_li" ><a href="#" class="bt-menu" (click)="show_menu_function()"><img src="../../../assets/baseballIcon2.png" alt=""></a></li>
+    </ul>
   </div>
+</ng-container>
 
-  <nav role="navigation">
-      <ul>
-          <li class="branding">VtGl</li>
-          <li><a href="#">Inicio</a></li>
-        <li><a href="#">Bateadores</a>
-          <ul class="dropdown">
-            <li class="submenu"><a href="#">Actuación Diaria</a></li>
-            <li><a href="#">Temporada Actual</a></li>
-            <li><a href="#">Biografía</a></li>
-            <li><a href="#">Por Posición</a></li>
-            <li><a href="#">Por Equipo</a></li>
-          </ul>
-        </li>
-        <li><a href="#">Pitchers</a>
-          <ul class="dropdown">
-            <li><a href="#">Actuación Diaria</a></li>
-            <li><a href="#">Temporada Actual</a></li>
-            <li><a href="#">Biografía</a></li>
-            <li><a href="#">Por Equipo</a></li>
-          </ul>
-        </li>
-        <li><a href="#">Noticias</a></li>
-        <li><a href="#">Nosotros</a></li>
-        <li><a href="#">Regístrese</a></li>
-      </ul>
-    </nav>
+<ng-container *ngIf="!show_menu" >
+  <nav class="nav_menu" role="navigation">
+    <ul class="menu_ul">
+      <li class="branding1 menu_ppal">VtGl</li>
+      <li class="menu_ppal"><a class="menu_a" href="#">Inicio</a></li>
+      <li class="menu_drop"><a class=" menu_ppal menu_a" href="#" >Bateadores</a>
+        <ul class="dropdown">
+          <li class="menu_li"><a  href="#" class="sub_menu ">Actuación Diaria</a></li>
+          <li class="menu_li"><a  href="#" class="sub_menu ">Temporada  Actual</a></li>
+          <li class="menu_li"><a  href="#" class="sub_menu ">Biografía</a></li>
+          <li class="menu_li"><a  href="#" class="sub_menu ">Por Posición</a></li>
+          <li class="menu_li"><a  href="#" class="sub_menu ">Por Equipo</a></li>
+        </ul>
+      </li>
+      <li class="menu_drop"><a  href="#" class="menu_ppal menu_a">Pitchers</a>
+        <ul class="dropdown">
+          <li class="menu_li"><a  href="#" class="sub_menu ">Actuación Diaria</a></li>
+          <li class="menu_li"><a  href="#" class="sub_menu ">Temporada  Actual</a></li>
+          <li class="menu_li"><a  href="#" class="sub_menu ">Biografía</a></li>
+          <li class="menu_li"><a  href="#" class="sub_menu ">Por Equipo</a></li>
+        </ul>
+      </li>
+      <li><a href="#" class="menu_ppal menu_a">Noticias</a></li>
+      <li><a href="#" class="menu_ppal menu_a">Nosotros</a></li>
+      <li><a href="#" class="menu_ppal menu_a">Regístrese</a></li>
+      <li class="menu_x"><a href="#" class="menu_ppal menu_a" (click)="show_menu_function2($event)"><clr-icon size="36" shape="times-circle"></clr-icon></a></li>
+    </ul>
+  </nav>
+</ng-container>
 
 
 
