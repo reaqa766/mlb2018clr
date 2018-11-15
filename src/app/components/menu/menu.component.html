@@ -12,28 +12,28 @@
   <nav class="nav_menu" role="navigation">
     <ul class="menu_ul">
       <li class="branding1 menu_ppal">VtGl</li>
-      <li class="menu_ppal"><a class="menu_a" href="#">Inicio</a></li>
+      <li class="menu_ppal"><a class="menu_a" routerLink="/">Inicio</a></li>
       <li class="menu_drop"><a class=" menu_ppal menu_a" href="#" >Bateadores</a>
         <ul class="dropdown">
-          <li class="menu_li"><a  href="#" class="sub_menu ">Actuación Diaria</a></li>
-          <li class="menu_li"><a  href="#" class="sub_menu ">Temporada  Actual</a></li>
-          <li class="menu_li"><a  href="#" class="sub_menu ">Biografía</a></li>
-          <li class="menu_li"><a  href="#" class="sub_menu ">Por Posición</a></li>
-          <li class="menu_li"><a  href="#" class="sub_menu ">Por Equipo</a></li>
+          <li class="menu_li"><a  routerLink="daily" class="sub_menu ">Actuación Diaria</a></li>
+          <li class="menu_li"><a  routerLink="actives" class="sub_menu ">Temporada  Actual</a></li>
+          <li class="menu_li"><a  routerLink="bioActives" class="sub_menu ">Biografía</a></li>
+          <li class="menu_li"><a  routerLink="position" class="sub_menu ">Por Posición</a></li>
+          <li class="menu_li"><a  routerLink="team" class="sub_menu ">Por Equipo</a></li>
         </ul>
       </li>
-      <li class="menu_drop"><a  href="#" class="menu_ppal menu_a">Pitchers</a>
+      <li class="menu_drop"><a  routerLink="daily" class="menu_ppal menu_a">Pitchers</a>
         <ul class="dropdown">
-          <li class="menu_li"><a  href="#" class="sub_menu ">Actuación Diaria</a></li>
-          <li class="menu_li"><a  href="#" class="sub_menu ">Temporada  Actual</a></li>
-          <li class="menu_li"><a  href="#" class="sub_menu ">Biografía</a></li>
-          <li class="menu_li"><a  href="#" class="sub_menu ">Por Equipo</a></li>
+          <li class="menu_li"><a  routerLink="pitcherDaily" class="sub_menu ">Actuación Diaria</a></li>
+          <li class="menu_li"><a  routerLink="pitchActives" class="sub_menu ">Temporada  Actual</a></li>
+          <li class="menu_li"><a  routerLink="pitchBiography" class="sub_menu ">Biografía</a></li>
+          <li class="menu_li"><a  routerLink="pitchTeam" class="sub_menu ">Por Equipo</a></li>
         </ul>
       </li>
-      <li><a href="#" class="menu_ppal menu_a">Noticias</a></li>
-      <li><a href="#" class="menu_ppal menu_a">Nosotros</a></li>
-      <li><a href="#" class="menu_ppal menu_a">Regístrese</a></li>
-      <li class="menu_x"><a href="#" class="menu_ppal menu_a" (click)="show_menu_function2($event)"><clr-icon size="36" shape="times-circle"></clr-icon></a></li>
+      <li><a routerLink="news" class="menu_ppal menu_a">Noticias</a></li>
+      <li><a routerLink="aboutUs" class="menu_ppal menu_a">Nosotros</a></li>
+      <li><a routerLink="register" class="menu_ppal menu_a">Regístrese</a></li>
+      <li class="menu_x"><a routerLink="daily" class="menu_ppal menu_a" (click)="show_menu_function2($event)"><clr-icon size="36" shape="times-circle"></clr-icon></a></li>
     </ul>
   </nav>
 </ng-container>

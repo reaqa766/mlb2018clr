@@ -17,6 +17,10 @@ import { RegisterComponent } from './components/register/register.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { MenuComponent } from './components/menu/menu.component';
 import { NewsComponent } from './components/news/news.component';
+import { PitcherActivesComponent } from './components/players/pitchers/pitcher-actives/pitcher-actives.component';
+import { PitcherByTeamComponent } from './components/players/pitchers/pitcher-by-team/pitcher-by-team.component';
+import { PitcherDailyComponent } from './components/players/pitchers/pitcher-daily/pitcher-daily.component';
+import { PitcherBiographyComponent } from './components/players/pitchers/pitcher-biography/pitcher-biography.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +36,11 @@ import { NewsComponent } from './components/news/news.component';
     RegisterComponent,
     FooterComponent,
     MenuComponent,
-    NewsComponent
+    NewsComponent,
+    PitcherActivesComponent,
+    PitcherByTeamComponent,
+    PitcherDailyComponent,
+    PitcherBiographyComponent
   ],
   imports: [
     BrowserModule,
