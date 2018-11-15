@@ -1,6 +1,16 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+import { FormsModule }   from '@angular/forms';
+import { GrdFilterPipe } from './components/grd-filter.pipe';
+
+import { HttpClientModule } from '@angular/common/http';
+
+
+import { PlayersService } from './services/players.service'; 
+import { PagerService } from './services/pager.service'; 
+
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ClarityModule } from '@clr/angular';
@@ -40,15 +50,18 @@ import { PitcherBiographyComponent } from './components/players/pitchers/pitcher
     PitcherActivesComponent,
     PitcherByTeamComponent,
     PitcherDailyComponent,
-    PitcherBiographyComponent
+    PitcherBiographyComponent,
+    GrdFilterPipe
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ClarityModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    HttpClientModule,
+    FormsModule
   ],
-  providers: [],
+  providers: [PlayersService, PagerService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

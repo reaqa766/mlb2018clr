@@ -1,5 +1,5 @@
 .container {
-  height: 26.5em;
+  height: 30em;
 }
 .container2 {
   background-color: rgba(0, 0, 0, .2);
@@ -94,7 +94,7 @@
   }
   .card-img {
     background-color: #fff;
-    width: 25em !important;
+    width: 24em !important;
   }
 
   .card-block {
@@ -143,7 +143,7 @@
   }
   .card-img {
     background-color: #fff;
-    width: 18em !important;
+    width: 17em !important;
   }
 
   .card-block {
@@ -199,7 +199,7 @@
   }
   .card-img {
     background-color: #fff;
-    width: 18em !important;
+    width: 17em !important;
   }
 
   .card-block {
