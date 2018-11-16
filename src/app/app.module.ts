@@ -1,14 +1,14 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { FormsModule }   from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 import { GrdFilterPipe } from './components/grd-filter.pipe';
 
 import { HttpClientModule } from '@angular/common/http';
 
 
-import { PlayersService } from './services/players.service'; 
-import { PagerService } from './services/pager.service'; 
+import { PlayersService } from './services/players.service';
+import { PagerService } from './services/pager.service';
 
 
 import { AppRoutingModule } from './app-routing.module';

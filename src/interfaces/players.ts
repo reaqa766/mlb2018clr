@@ -20,7 +20,7 @@ export interface Players {
     date?: Date,
     stat?:any[],
     atBats?: 5
-    avg?:string, 
+    avg?:string,
     baseOnBalls?:number,
     caughtStealing?: number,
     doubles?: number,

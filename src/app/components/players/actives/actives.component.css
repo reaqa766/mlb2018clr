@@ -1,9 +1,19 @@
 .container {
-    height: 30em;
-} 
+    height: 40em;
+}
+clr-datagrid {
+  width: 70%;
+}
+clr-dg-column {
+  background-color: rgb(255, 255, 255);
+}
+clr-dg-cell, clr-dg-row {
+  background-color: rgb(255, 255, 255) !important;
+
+}
 
 li {
-    color: rgb(255, 255, 255);
+    color: rgba(255, 255, 255,.5);
     font-size: 2em;
 }
 
@@ -11,8 +21,8 @@ li {
     color: antiquewhite;
     font-size: 2rem;
     text-align: center;
-    margin: 1.5rem auto 0; 
-    padding: .5rem 0; 
+    margin: 1.5rem auto 0;
+    padding: .5rem 0;
     background-color: rgba(3, 2, 2, 0.5);
     width: 12em;
     height: 1.75em;

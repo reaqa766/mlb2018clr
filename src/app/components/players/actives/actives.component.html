@@ -1,3 +1,29 @@
-<p>
-  actives works!
-</p>
+<div class="container"></div>
+
+<clr-datagrid *ngIf="!isLoading">
+  <clr-dg-column [clrDgField]="'fullName'" >Name</clr-dg-column>
+  <clr-dg-column [clrDgField]="'atBats'">At Bats</clr-dg-column>
+  <clr-dg-column [clrDgField]="'avg'">Avg</clr-dg-column>
+  <clr-dg-column [clrDgField]="'player.stats[0].splits[0].stat.runs'" [clrDgSortBy]="playerComparator">CA</clr-dg-column>
+  <clr-dg-column [clrDgField]="'hits'">Hits</clr-dg-column>
+  <clr-dg-column [clrDgField]="'strikeOuts'">StrksO</clr-dg-column>
+  <clr-dg-column [clrDgField]="'baseOnBalls'">BB</clr-dg-column>
+  <clr-dg-column [clrDgField]="'rbi'">CI</clr-dg-column>
+  <clr-dg-column [clrDgField]="'homeRuns'">Hr</clr-dg-column>
+  <clr-dg-column [clrDgField]="'stolenBases'">Br</clr-dg-column>
+
+  <clr-dg-row *clrDgItems="let player of players; let i = index">
+      <clr-dg-cell>{{player.fullName}}</clr-dg-cell>
+      <clr-dg-cell>{{player.stats[0].splits[0].stat.atBats || '0' }}</clr-dg-cell>
+      <clr-dg-cell>{{player.stats[0].splits[0].stat.avg || '0' }}</clr-dg-cell>
+      <clr-dg-cell>{{player.stats[0].splits[0].stat.runs || '0' }}</clr-dg-cell>
+      <clr-dg-cell>{{player.stats[0].splits[0].stat.hits|| '0' }}</clr-dg-cell>
+      <clr-dg-cell>{{player.stats[0].splits[0].stat.strikeOuts || '0' }}</clr-dg-cell>
+      <clr-dg-cell>{{player.stats[0].splits[0].stat.baseOnBalls || '0' }}</clr-dg-cell>
+      <clr-dg-cell>{{player.stats[0].splits[0].stat.rbi || '0' }}</clr-dg-cell>
+      <clr-dg-cell>{{player.stats[0].splits[0].stat.homeRuns || '0' }}</clr-dg-cell>
+      <clr-dg-cell>{{player.stats[0].splits[0].stat.stolenBases || '0' }}</clr-dg-cell>
+  </clr-dg-row>
+
+  <clr-dg-footer>{{players?.length}} users</clr-dg-footer>
+</clr-datagrid>
